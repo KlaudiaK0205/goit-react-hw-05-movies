@@ -1,0 +1,10 @@
+.movieBox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}

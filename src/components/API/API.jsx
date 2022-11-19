@@ -3,11 +3,11 @@ import axios from 'axios';
 const API_URL = 'https://api.themoviedb.org/3';
 const API_KEY = 'c24852b03acfe4951ef3115a9d02ad29';
 
-export const getTrendingFilms = async () => {
-  const response = await axios.get(
-    `${API_URL}/trending/movie/week?api_key=${API_KEY}`
-  );
-  return response;
+export const getTrending = async () => {
+  const { data } = await axios.get(
+        `${API_URL}/trending/movie/week?api_key=${API_KEY}`
+      );
+  return data.results;
 };
 
 export const fetchFilmById = async id => {
